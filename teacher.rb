@@ -10,13 +10,14 @@ class Teacher < Teachers
     @name = options.fetch(:name, "")
   end
 
-  # def teach_stuff
-  #   response = ""
-  #   response += "Listen, class, this is how everything works, fo SHO! "
-  #   response += "*drops flat-out insane knowledge bomb* "
-  #   response += "... You're welcome. *saunters away*"
-  #   response
-  # end
+#TRIED TO REFACTOR BUT FOR SOME REASON DIDN'T WORK WITH RSPEC ON THIS ONE BUT WORKED WITH ONE FOR APPREENTICE
+  def teach_stuff
+    response = ""
+    response += "Listen, class, this is how everything works, fo SHO! "
+    response += "*drops flat-out insane knowledge bomb* "
+    response += "... You're welcome. *saunters away*"
+    response
+  end
 
   def set_performance_rating(rating)
     response = ""
